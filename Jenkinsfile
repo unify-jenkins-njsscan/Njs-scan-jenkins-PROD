@@ -2,7 +2,7 @@ pipeline {
   agent any
 
   triggers {
-        cron '00 21 * * 1-5' // Runs at 21:00 on every day-of-week from Monday through Friday
+        cron '00 21 * * 1,4' // Runs at 21:00 on Monday and Thursday
     }
 
   environment {
